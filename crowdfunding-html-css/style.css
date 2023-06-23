@@ -54,6 +54,12 @@ body {
 	left: 80%;
 }
 
+.donate-box-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .progress-bar {
 	display: flex;
 	flex-direction: row;
@@ -73,11 +79,6 @@ body {
 	width: 25%;
 }
 
-.donate-box-flex {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
 
 .donate-box-contents {
 	border: 1px solid #DCDCDC;
@@ -91,6 +92,10 @@ body {
 	padding-bottom: 20px;
 }
 
+.main-text {
+	line-height: 25px;
+}
+
 #days-left {
 	color:#F15E33;
 	font-weight: bold;
@@ -98,10 +103,6 @@ body {
 
 #other-donors {
 	font-weight: bold;
-}
-
-.main-text {
-	line-height: 25px;
 }
 
 .input-submit-flex {
