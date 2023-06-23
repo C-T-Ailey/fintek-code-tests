@@ -1,0 +1,188 @@
+/*
+	Please add your custom CSS in this file. The hex codes for the colours are below.
+
+	Main text color (grey): #838383
+	Dark grey for the speech bubble at the top: #424242
+	Grey border colour for the main content area, and the buttons at the bottom: #DCDCDC
+	Orange colour for the highlighted "only 3 days left" text and the progress bar: #F15E33
+	The background for the part of the progress bar that isn't filled in: #FAFAFA
+	Buttons at the bottom: #838383
+	Green button: #00BE1C
+	Green button border: #01B21A
+	"Why give 50" link: #25A5D8
+*/
+
+body {
+	font-family: "Roboto";
+}
+
+.widget-wrapper-flex {
+	display: flex;
+	flex-direction: column;
+	/* height: 377px; */
+	width: 300px;
+}
+
+.amount-needed-flex {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	height: fit-content;
+}
+
+.amount-needed-bubble {
+	background-color: #424242;
+	color: white;
+	height: 50px;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+
+}
+
+#needed-amount {
+	font-weight: bold;
+}
+
+.bubble-tail {
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 10px solid #424242;
+	position: relative;
+	left: 80%;
+}
+
+.progress-bar {
+	display: flex;
+	flex-direction: row;
+	border: 1px solid #DCDCDC;
+	height: 12px;
+}
+
+.completed {
+	background-color: #F15E33;
+	height: 100%;
+	width: 75%;
+}
+
+.remaining {
+	background-color: #FAFAFA;
+	height: 100%;
+	width: 25%;
+}
+
+.donate-box-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.donate-box-contents {
+	border: 1px solid #DCDCDC;
+	color: #838383;
+	border-top: 0px;
+	height: 245px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 15px;
+	padding-bottom: 20px;
+}
+
+#days-left {
+	color:#F15E33;
+	font-weight: bold;
+}
+
+#other-donors {
+	font-weight: bold;
+}
+
+.main-text {
+	line-height: 25px;
+}
+
+.input-submit-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance:textfield;
+}
+
+.input-flex {
+	display: flex;
+	flex-direction: row;
+	max-width: 125px;
+	max-height: 45px;
+	border: 1px solid #DCDCDC;
+}
+
+.currency-symbol {
+	width: 20px;
+	font-family: "Roboto";
+	font-size: 18px;
+	font-weight: bold;
+	color: #838383;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.money-input {
+	max-width: 100px;
+	border: none;
+	background-color: transparent;
+	font-family: "Roboto";
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.give-now {
+	height: 45px;
+	width: 125px;
+	border: 1px solid #01B21A;
+	border-radius: 3px;
+	background-color: #00BE1C;
+	font-family: "Roboto";
+	color: white;
+	font-size: 17px;
+}
+
+
+.why {
+	text-decoration: none;
+	color: #25A5D8;
+	font-style: italic;
+	font-size: 15px;
+}
+
+.save-tell-flex {
+	width: 300px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+
+.save-tell-button {
+	width: 140px;
+	height: 34px;
+	border: 1px solid #DCDCDC;
+	background-color: #FAFAFA;
+	border-radius: 3px;
+	font-family: Verdana;
+	color: #838383;
+	font-weight: bold;
+}
